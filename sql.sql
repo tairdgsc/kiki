@@ -21,3 +21,14 @@ CREATE TABLE `cadastro_prestadores` (
   `estado` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS `produto`;
+CREATE TABLE IF NOT EXISTS `produto` (
+  `idproduto` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(255) NULL,
+  `cod_produto` VARCHAR(255) NULL,
+  `quantidade` VARCHAR(255) NULL,
+  `validade` VARCHAR(255) NULL,
+  `descricao` VARCHAR(255) NULL,
+  PRIMARY KEY (`idproduto`))
+ENGINE = InnoDB;
